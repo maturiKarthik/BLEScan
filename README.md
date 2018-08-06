@@ -39,6 +39,11 @@ on which we can perform write,Readl,notify and indicate .
 Each charcateristics has property READ,WRTIE,NOTIFY and INDICATE which you will find on the specification of the 
 Device.
 
+Each charateristics and services are of type UUID you will find the specification doc of the DEVICE or
+visit SIG
+
+<ul>https://www.bluetooth.com/specifications/assigned-numbers/service-discovery</ul>
+
 After , a small description of the BLE now lets enter in to CODE 
 
 </p>
