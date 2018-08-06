@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/device_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/connection_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textFontWeight="30dp"
+        android:text="NOT CONNECTED"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CONNECT"/>
+
+        <Button
+            android:id="@+id/dis_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIS-CONNECT"/>
+
+        <Button
+            android:id="@+id/canConfig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAN-CONFIG"/>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:text="SELEECT THE QUERY :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner_query"
+        android:gravity="center"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical"
+        android:spinnerMode="dialog"
+        android:nextFocusDown="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <Button
+        android:id="@+id/WRITE"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WRITE_VALUE"/>
+
+    <TextView
+        android:text="Data _ Recieved :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/display_data"
+        android:fontFamily="sans-serif"
+        android:textFontWeight="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:text="Application Debuger :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/Logger"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/Log"
+            android:layout_width="wrap_content"
+            android:divider="@color/colorPrimary"
+            android:layout_height="match_parent"></ListView>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

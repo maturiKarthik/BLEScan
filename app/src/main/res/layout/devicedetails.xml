@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv"
+            android:text="test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/connection_state"
+            android:text="test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/data_value"
+            android:text="DATA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+ <!-- Buttons To Read & Write Characters -->
+
+        <Button
+            android:id="@+id/dis_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dis_connect"
+            />
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CONNECT"
+            android:onClick="onClickCon"/>
+
+        <Button
+            android:id="@+id/readData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="readData"
+            android:onClick="onClickRead"/>
+
+        <Button
+            android:id="@+id/writeData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WRITE DATA"
+            android:onClick="onClickWrite"/>
+
+        <Button
+            android:id="@+id/notify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SET NOTIFICATION"
+            />
+
+
+
+    </LinearLayout>
+    <Space android:layout_width="5dp"
+        android:layout_height="wrap_content"/>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ExpandableListView
+        android:id="@+id/gatt_services_list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"></ExpandableListView>
+</LinearLayout>
+
+
+</LinearLayout>
